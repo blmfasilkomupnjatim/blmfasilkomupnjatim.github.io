@@ -1,0 +1,15 @@
+.container-aspirasi {
+    background-color: color(tiga);
+    padding: 3em;
+    @include flex-column;
+
+    &_text {
+        text-align: center;
+        padding: 2em;
+        font-size: 1.4em;
+        color: color(white);
+        font-weight: bold;
+    }
+
+
+}

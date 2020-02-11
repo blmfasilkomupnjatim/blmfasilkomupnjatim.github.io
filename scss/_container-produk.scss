@@ -1,0 +1,41 @@
+.container-produk {
+    background-color: color(empat);
+    padding: 3em;
+
+    &_text {
+        text-align: center;
+        padding: 2em;
+        font-size: 1.4em;
+        color: color(black);
+        font-weight: bold;
+    }
+
+    &_section {
+        @include flex-column;
+        margin-bottom: 4em;
+
+        &_kotak {
+            // width: 45%;
+            // filter: drop-shadow(-5px 5px 5px color(satu));
+            // box-shadow: -2em 3px 2em color(satu);
+            border-left: .5em solid color(satu);
+            background-color: color(white);
+
+            border-radius: .4em;
+            padding: .5em;
+            clip-path: polygon(0 0, 100% 0%, 100% 97%, 15% 97%, 12% 100%, 9% 97%, 0 97%);
+        }
+
+        &_text {
+            padding: 1em;
+            text-align: center;
+            color: color(black);
+            font-weight: bold;
+        }
+    }
+}
+
+.container-row {
+    @include flex-row;
+    justify-content: space-around;
+}

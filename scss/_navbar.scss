@@ -1,0 +1,153 @@
+.navbar {
+    position: fixed;
+    @include flex-row;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 12vh;
+    // min-height: 8vh;
+    background-color: rgba(color(satu-darkest), .0);
+    transition: $transition;
+    z-index: 2;
+
+    &_logo {
+        @include flex-row;
+        color: color(satu-lighter);
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .1125rem;
+        font-size: .6rem;
+        position: relative;
+        transition: $transition-slow;
+        // transform: translateX(-5em);
+        // pointer-events: none;
+        height: 4em;
+        width: 4em;
+
+        &:hover {
+            filter: drop-shadow(0 0 5px color(dua));
+        }
+
+        &_text {
+            padding-left: 1em;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    &_logo_scroll {
+        letter-spacing: .3125rem;
+        font-size: 1.25rem;
+        color: color(white);
+        transform: translateX(0em);
+        pointer-events: all;
+    }
+
+    &_nav-links {
+        @include flex-row;
+        justify-content: space-around;
+        width: 50%;
+        list-style: none;
+        transition: $transition-slower;
+        opacity: 1;
+        pointer-events: all;
+        padding-left: 3em;
+
+        @include tablet {
+            width: 62%;
+            padding-left: 0em;
+        }
+
+        @include phone {
+            position: absolute;
+            right: 0;
+            height: 92vh;
+            top: 8vh;
+            background-color: color(satu);
+            @include flex-column;
+            justify-content: space-around;
+            width: 30%;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: $transition-fast;
+
+        }
+
+        li {
+            @include phone {
+                opacity: 0;
+            }
+
+            a {
+                text-align: center;
+                color: color(white);
+                text-decoration: none;
+                letter-spacing: .3px;
+                font-size: .875rem;
+                transition: $transition;
+
+                &.active {
+                    font-weight: bold;
+                }
+
+                &:hover {
+                    text-shadow: 1px 0 1em darken(color(satu-darkest), 20%);
+                }
+            }
+        }
+    }
+
+    &_nav-links-active {
+        @include phone {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
+    &_burger {
+        display: none;
+        pointer-events: none;
+
+        @include phone {
+            opacity: 0;
+            display: block;
+            cursor: pointer;
+            transition: $transition-slower;
+        }
+
+        div {
+            width: 1.5625em;
+            height: .1875em;
+            background-color: white;
+            margin: .3125em;
+            transition: $transition;
+        }
+    }
+
+    &_burger_scroll {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+
+    &_toggle-burger .line1 {
+        animation: line1animation .5s forwards ease-out;
+    }
+
+    &_toggle-burger .line2 {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    &_toggle-burger .line3 {
+        animation: line3animation 1s forwards cubic-bezier(.77, 0, .175, 1)
+    }
+
+}
+
+.navbar_scroll {
+    background-color: rgba(color(satu-darkest), .6);
+    height: 10vh;
+}
