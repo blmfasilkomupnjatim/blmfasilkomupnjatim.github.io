@@ -38,4 +38,8 @@
 .container-row {
     @include flex-row;
     justify-content: space-around;
+
+    @include tablet {
+        @include flex-column;
+    }
 }

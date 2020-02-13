@@ -1,0 +1,59 @@
+.footer {
+    height: 8em;
+    background-color: color(satu-lighter);
+    @include flex-row;
+    justify-content: space-around;
+
+    @include tablet {
+        height: 7em;
+    }
+
+    @include phone {
+        height: 6em;
+
+        @include phone {
+            margin-bottom: $navbar-bar-height;
+            ;
+        }
+    }
+
+    &_copyright {
+        color: color(satu);
+        font-size: .9rem;
+
+        @include tablet {
+            font-size: .8rem;
+        }
+
+        @include phone {
+            font-size: .7rem;
+        }
+    }
+
+    &_contact {
+        @include flex-row;
+        font-size: 2rem;
+        width: 10%;
+        justify-content: space-around;
+        z-index: 2;
+
+        @include tablet {
+            width: 35%;
+            font-size: 1.8rem;
+        }
+
+        @include phone {
+            font-size: 1.6rem;
+        }
+
+        a {
+            color: color(satu-darker);
+            text-decoration: none;
+
+            &:hover {
+                filter: drop-shadow(0 0 1px color(dua));
+                // text-shadow: 0 0 1px color(dua);
+            }
+        }
+    }
+}

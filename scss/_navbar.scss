@@ -5,39 +5,67 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 12vh;
+    height: $navbar-height;
     // min-height: 8vh;
-    background-color: rgba(color(satu-darkest), .0);
+    background-color: rgba(color(satu-darkest), 0);
     transition: $transition;
     z-index: 2;
 
     &_logo {
         @include flex-row;
+        // justify-content: space-around;
         color: color(satu-lighter);
         text-transform: uppercase;
         text-decoration: none;
-        letter-spacing: .1125rem;
-        font-size: .6rem;
-        position: relative;
+        letter-spacing: 0.1125rem;
+        font-size: 0.6rem;
         transition: $transition-slow;
+        width: 30%;
+        // position: relative;
         // transform: translateX(-5em);
         // pointer-events: none;
-        height: 4em;
-        width: 4em;
 
         &:hover {
             filter: drop-shadow(0 0 5px color(dua));
         }
 
+        @include phone {
+            width: 65%;
+        }
+
+        &_img {
+
+            img {
+                height: 5em;
+                width: 5em;
+            }
+
+        }
+
         &_text {
+            @include flex-column;
+            align-items: flex-start;
+            text-decoration: none;
             padding-left: 1em;
-            color: white;
-            font-weight: bold;
+
+            @include phone {
+                @include flex-row;
+            }
+
+            p {
+                color: white;
+                font-weight: bold;
+
+                @include phone {
+                    padding-right: .7em;
+                }
+            }
+
         }
     }
 
     &_logo_scroll {
-        letter-spacing: .3125rem;
+        letter-spacing: 0.3125rem;
         font-size: 1.25rem;
         color: color(white);
         transform: translateX(0em);
@@ -55,36 +83,60 @@
         padding-left: 3em;
 
         @include tablet {
-            width: 62%;
             padding-left: 0em;
+            position: absolute;
+            right: 0;
+            top: 0vh;
+            height: 100vh;
+            background-color: rgba(color(satu-darkest), 0.6);
+            @include flex-column;
+            justify-content: space-around;
+            width: 0%;
+            opacity: 0;
+            transition: $transition-fast;
         }
 
         @include phone {
+            padding-left: 0em;
             position: absolute;
-            right: 0;
-            height: 92vh;
-            top: 8vh;
-            background-color: color(satu);
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 100vh - $navbar-bar-height;
+            background-color: rgba(color(satu-darkest), 0.6);
             @include flex-column;
             justify-content: space-around;
-            width: 30%;
+            width: 0%;
             opacity: 0;
-            transform: translateX(100%);
             transition: $transition-fast;
+        }
 
+        &_scroll {
+            top: $navbar-height-scroll;
+            height: 100vh - $navbar-height-scroll;
+
+            @include phone {
+                // top: 0vh;
+                height: 100vh - $navbar-bar-height - $navbar-height-scroll;
+            }
+        }
+
+        &_click {
+            opacity: 1;
+            width: 30%;
+
+            @include phone {
+                width: 40%;
+            }
         }
 
         li {
-            @include phone {
-                opacity: 0;
-            }
-
             a {
                 text-align: center;
                 color: color(white);
                 text-decoration: none;
-                letter-spacing: .3px;
-                font-size: .875rem;
+                letter-spacing: 0.3px;
+                font-size: 0.875rem;
                 transition: $transition;
 
                 &.active {
@@ -98,56 +150,109 @@
         }
     }
 
-    &_nav-links-active {
-        @include phone {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-
     &_burger {
         display: none;
-        pointer-events: none;
+        transition: $transition;
+
+        // pointer-events: none;
+        @include tablet {
+            z-index: 2;
+            display: block;
+        }
 
         @include phone {
-            opacity: 0;
-            display: block;
-            cursor: pointer;
-            transition: $transition-slower;
+            display: none;
+        }
+
+        &_click {
+            transform: rotate(360deg);
+
+            .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .line2 {
+                // transform: translateX(100px);
+                opacity: 0;
+            }
+
+            .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
         }
 
         div {
             width: 1.5625em;
-            height: .1875em;
+            height: 0.1875em;
             background-color: white;
-            margin: .3125em;
+            margin: 0.3125em;
             transition: $transition;
         }
     }
 
-    &_burger_scroll {
-        opacity: 1;
-        pointer-events: all;
+    &_bar {
+        display: none;
+
+        @include phone {
+            @include flex-row;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: $navbar-bar-height;
+            background-color: rgba(color(satu-darkest), 0.6);
+
+        }
+
+        &_tombol {
+            font-size: 1.6em;
+        }
+
+        &_dot {
+            transition: $transition;
+
+            // pointer-events: none;
+            &_click {
+                transform: rotate(-360deg) rotateX(180deg);
+
+                .line1 {
+                    width: 1.5625em;
+                    height: 0.1875em;
+                    transform: rotate(-45deg) translate(-5px, 7px);
+                    border-radius: 0;
+                }
+
+                .line2 {
+                    // transform: translateX(100px);
+                    opacity: 0;
+                }
+
+                .line3 {
+                    width: 1.5625em;
+                    height: 0.1875em;
+                    transform: rotate(45deg) translate(-5px, -7px);
+                    border-radius: 0;
+                }
+            }
+
+            div {
+                width: 0.2875em;
+                height: 0.2875em;
+                border-radius: 50%;
+                background-color: white;
+                margin: 0.3125em;
+                transition: $transition;
+            }
+        }
+
     }
 
-
-    &_toggle-burger .line1 {
-        animation: line1animation .5s forwards ease-out;
-    }
-
-    &_toggle-burger .line2 {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-
-    &_toggle-burger .line3 {
-        animation: line3animation 1s forwards cubic-bezier(.77, 0, .175, 1)
-    }
-
+    // End .navbar
 }
 
+
 .navbar_scroll {
-    background-color: rgba(color(satu-darkest), .6);
-    height: 10vh;
+    background-color: rgba(color(satu-darkest), 0.6);
+    height: $navbar-height-scroll;
 }

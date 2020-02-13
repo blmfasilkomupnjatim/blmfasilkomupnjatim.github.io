@@ -14,10 +14,15 @@
 
 <body>
     <nav class="navbar" id="navbar">
-        <a href="https://github.com/Afumoons/Afumoons.github.io" class="navbar_logo">
-            <img class="fluid" src="./assets/icon/Logo-BLM-low.png" alt="BLM FASILKOM">
-            <p class="navbar_logo_text">BLM FASILKOM</p>
-        </a>
+        <div class="navbar_logo">
+            <a href="https://github.com/Afumoons/Afumoons.github.io" class="navbar_logo_img">
+                <img class="fluid" src="./assets/icon/Logo-BLM-low.png" alt="BLM FASILKOM">
+            </a>
+            <a href="https://github.com/Afumoons/Afumoons.github.io" class="navbar_logo_text">
+                <p>BLM FASILKOM</p>
+                <p>UPN "Veteran" Jatim</p>
+            </a>
+        </div>
         <div class="navbar_burger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -28,15 +33,34 @@
             <li><a href="./kenalan.html">Kenalan Yuk!</a></li>
             <li><a href="./produk.html">Produk Hukum</a></li>
             <li><a class="active" href="./aspirasi.html">Aspirasi mahasiswa</a></li>
-
         </ul>
+        <div class="navbar_bar">
+            <div class="navbar_bar_dot">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <i class="navbar_bar_tombol "></i>
+            <i class="navbar_bar_tombol "></i>
+        </div>
     </nav>
     <div class="container-aspirasi">
         <h3 class="container-aspirasi_text" data-aos="slide-right">Form Aspirasi KM FASILKOM</h3>
-        <iframe data-aos="slide-right"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfVh-0Fv-NPU7CBAdtTYYEL4drY7603gsGbKlMkMoMnOaWArQ/viewform?embedded=true"
-            width="640" height="1261" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div class="container-aspirasi_iframe">
+            <iframe data-aos="slide-right"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfVh-0Fv-NPU7CBAdtTYYEL4drY7603gsGbKlMkMoMnOaWArQ/viewform?embedded=true"
+                width="400" height="1261" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
     </div>
+
+    <footer class="footer">
+        <p class="footer_copyright">Copyright © Afumoons 2020.</p>
+        <div class="footer_contact">
+            <a href="https://www.instagram.com/afumoons/"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/6287742212442"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/script.js"></script>
 </body>
