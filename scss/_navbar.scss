@@ -48,17 +48,9 @@
             text-decoration: none;
             padding-left: 1em;
 
-            @include phone {
-                @include flex-row;
-            }
-
             p {
                 color: white;
                 font-weight: bold;
-
-                @include phone {
-                    padding-right: .7em;
-                }
             }
 
         }
