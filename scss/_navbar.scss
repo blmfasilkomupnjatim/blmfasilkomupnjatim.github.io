@@ -6,14 +6,12 @@
     left: 0;
     right: 0;
     height: $navbar-height;
-    // min-height: 8vh;
     background-color: rgba(color(satu-darkest), 0);
     transition: $transition;
-    z-index: 2;
+    z-index: 3;
 
     &_logo {
         @include flex-row;
-        // justify-content: space-around;
         color: color(satu-lighter);
         text-transform: uppercase;
         text-decoration: none;
@@ -21,9 +19,6 @@
         font-size: 0.6rem;
         transition: $transition-slow;
         width: 30%;
-        // position: relative;
-        // transform: translateX(-5em);
-        // pointer-events: none;
 
         &:hover {
             filter: drop-shadow(0 0 5px color(dua));
@@ -104,11 +99,12 @@
         }
 
         &_scroll {
-            top: $navbar-height-scroll;
-            height: 100vh - $navbar-height-scroll;
+            @include tablet {
+                top: $navbar-height-scroll;
+                height: 100vh - $navbar-height-scroll;
+            }
 
             @include phone {
-                // top: 0vh;
                 height: 100vh - $navbar-bar-height - $navbar-height-scroll;
             }
         }
@@ -146,9 +142,8 @@
         display: none;
         transition: $transition;
 
-        // pointer-events: none;
         @include tablet {
-            z-index: 2;
+            z-index: 3;
             display: block;
         }
 
@@ -164,7 +159,6 @@
             }
 
             .line2 {
-                // transform: translateX(100px);
                 opacity: 0;
             }
 
@@ -204,7 +198,6 @@
         &_dot {
             transition: $transition;
 
-            // pointer-events: none;
             &_click {
                 transform: rotate(-360deg) rotateX(180deg);
 
@@ -216,7 +209,6 @@
                 }
 
                 .line2 {
-                    // transform: translateX(100px);
                     opacity: 0;
                 }
 

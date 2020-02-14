@@ -2,11 +2,18 @@
 @import "variables";
 @import "functions";
 @import "mixins";
+@import "glide.core";
+@import "glide.theme";
 
 // Tengah
-@import "navbar";
-@import "container-produk";
-@import "container-aspirasi";
-@import "footer";
+body {
+    background-color: color(satu-lighter);
+    @import "navbar";
+    @import "container-home";
+    @import "container-kenalan";
+    @import "container-produk";
+    @import "container-aspirasi";
+    @import "footer";
+}
 
 // Bawah

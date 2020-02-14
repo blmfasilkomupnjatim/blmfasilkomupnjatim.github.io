@@ -2,6 +2,12 @@ const nav = document.querySelector('.navbar');
 const nav_links = document.querySelector('.navbar_nav-links');
 const burger = document.querySelector('.navbar_burger');
 const dot = document.querySelector('.navbar_bar_dot');
+const configaos = {
+    duration: 1200
+}
+const configglide = {
+    type: 'carousel'
+}
 
 // Scroll method
 const scrollPage = () => {
@@ -34,9 +40,8 @@ const dotClick = () => {
     });
 };
 
-AOS.init({
-    duration: 1200
-});
+AOS.init(configaos);
+new Glide('.glide', configglide).mount()
 scrollPage();
 burgerClick();
 dotClick();

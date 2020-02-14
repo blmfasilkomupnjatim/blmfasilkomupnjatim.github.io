@@ -66,9 +66,7 @@ $colors: ( // Default
 
 // Media Breakpoints
 $tablet: 770px;
-$phone: 500px;
-// $phone: 440px;
-// @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i&display=swap');
+$phone: 440px;
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 
 // Transisi
@@ -81,6 +79,11 @@ $transition-slower: 1500ms ease-in-out;
 $navbar-height:12vh;
 $navbar-height-scroll:10vh;
 $navbar-bar-height:9vh;
+
+$glide-class: 'glide' !default;
+$glide-element-separator: '__' !default;
+$glide-modifier-separator: '--' !default;
+
 
 html {
 	scroll-behavior: smooth;
@@ -101,4 +104,13 @@ body {
 .fluid {
 	width: 100%;
 	height: 100%;
+}
+
+.transparent {
+	opacity: 0;
+	transition: $transition;
+
+	&:hover {
+		opacity: 1;
+	}
 }
