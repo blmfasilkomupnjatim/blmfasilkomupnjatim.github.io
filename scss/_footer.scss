@@ -33,16 +33,17 @@
     &_contact {
         @include flex-row;
         font-size: 2rem;
-        width: 10%;
+        width: 20%;
         justify-content: space-around;
         z-index: 2;
 
         @include tablet {
-            width: 35%;
+            width: 25%;
             font-size: 1.8rem;
         }
 
         @include phone {
+            width: 35%;
             font-size: 1.6rem;
         }
 
