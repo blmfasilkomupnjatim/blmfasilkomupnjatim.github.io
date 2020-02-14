@@ -41,7 +41,6 @@ const dotClick = () => {
 };
 
 AOS.init(configaos);
-new Glide('.glide', configglide).mount()
 scrollPage();
 burgerClick();
 dotClick();
