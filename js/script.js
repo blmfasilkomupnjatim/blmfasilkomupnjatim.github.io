@@ -1,7 +1,9 @@
+// Components initialization
 const nav = document.querySelector('.navbar');
 const nav_links = document.querySelector('.navbar_nav-links');
 const burger = document.querySelector('.navbar_burger');
 const dot = document.querySelector('.navbar_bar_dot');
+
 const configaos = {
     duration: 1200
 }
@@ -33,6 +35,8 @@ const burgerClick = () => {
         burger.classList.toggle('navbar_burger_click');
     });
 };
+
+// Dot method
 const dotClick = () => {
     dot.addEventListener('click', () => {
         nav_links.classList.toggle('navbar_nav-links_click');
