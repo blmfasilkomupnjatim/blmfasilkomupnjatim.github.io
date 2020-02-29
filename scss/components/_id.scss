@@ -1,0 +1,8 @@
+#overlay {
+    background-color: darken(color(black), 8%);
+    opacity: .7;
+    // z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

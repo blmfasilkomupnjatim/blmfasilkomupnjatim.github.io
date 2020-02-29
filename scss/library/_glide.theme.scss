@@ -7,7 +7,7 @@
   &#{$se}arrow {
     position: absolute;
     display: block;
-    top: 50%;
+    top: 65%;
     z-index: 2;
     color: color(satu);
     text-transform: uppercase;
@@ -22,14 +22,14 @@
     transition: opacity 150ms ease, border 300ms ease-in-out;
     transform: translateY(-50%);
     line-height: 1;
-    font-size: 2em;
+    font-size: 3rem;
 
     @include tablet {
-      font-size: 1.8em;
+      font-size: 2.2rem;
     }
 
     @include phone {
-      font-size: 1.2em;
+      font-size: 1.5rem;
     }
 
     &:focus {

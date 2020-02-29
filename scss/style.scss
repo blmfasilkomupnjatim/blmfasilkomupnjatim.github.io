@@ -2,17 +2,14 @@
 @import "variables";
 @import "functions";
 @import "mixins";
-@import "glide.core";
-@import "glide.theme";
+@import "library";
 
 // Tengah
 body {
     background-color: color(satu-lighter);
     @import "navbar";
-    @import "container-home";
-    @import "container-kenalan";
-    @import "container-produk";
-    @import "container-aspirasi";
+    @import "components";
+    @import "container";
     @import "footer";
 }
 

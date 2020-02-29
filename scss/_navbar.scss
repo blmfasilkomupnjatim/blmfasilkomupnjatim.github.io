@@ -26,19 +26,19 @@
 
         @include tablet {
             width: 45%;
+            transform: translateX(-4em);
         }
 
         @include phone {
             width: 65%;
+            transform: translateX(0em);
         }
 
         &_img {
-
             img {
                 height: 5em;
                 width: 5em;
             }
-
         }
 
         &_text {
@@ -55,13 +55,13 @@
         }
     }
 
-    &_logo_scroll {
-        letter-spacing: 0.3125rem;
-        font-size: 1.25rem;
-        color: color(white);
-        transform: translateX(0em);
-        pointer-events: all;
-    }
+    // &_logo_scroll {
+    //     letter-spacing: 0.3125rem;
+    //     font-size: 1.25rem;
+    //     color: color(white);
+    //     transform: translateX(0em);
+    //     pointer-events: all;
+    // }
 
     &_nav-links {
         @include flex-row;
