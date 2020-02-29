@@ -1,0 +1,9 @@
+.text-picture {
+    position: absolute;
+    @include flex-column;
+    // top: 50%;
+    font-size: 3rem;
+    color: color(white);
+    // margin: 1em;
+
+}

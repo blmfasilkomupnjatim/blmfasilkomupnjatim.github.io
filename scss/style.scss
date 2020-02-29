@@ -8,6 +8,7 @@
 body {
     background-color: color(satu-lighter);
     @import "navbar";
+    @import "components";
     @import "container";
     @import "footer";
 }

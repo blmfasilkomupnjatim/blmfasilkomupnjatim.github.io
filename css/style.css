@@ -31,11 +31,11 @@ body { overflow-x: hidden; }
 
 .glide--rtl { direction: rtl; }
 
-.glide__arrow { position: absolute; display: block; top: 50%; z-index: 2; color: #ff9933; text-transform: uppercase; padding: 9px 12px; background-color: transparent; border: none; text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); opacity: 1; cursor: pointer; -webkit-transition: opacity 150ms ease, border 300ms ease-in-out; transition: opacity 150ms ease, border 300ms ease-in-out; -webkit-transform: translateY(-50%); transform: translateY(-50%); line-height: 1; font-size: 2em; }
+.glide__arrow { position: absolute; display: block; top: 65%; z-index: 2; color: #ff9933; text-transform: uppercase; padding: 9px 12px; background-color: transparent; border: none; text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); opacity: 1; cursor: pointer; -webkit-transition: opacity 150ms ease, border 300ms ease-in-out; transition: opacity 150ms ease, border 300ms ease-in-out; -webkit-transform: translateY(-50%); transform: translateY(-50%); line-height: 1; font-size: 3rem; }
 
-@media screen and (max-width: 950px) { .glide__arrow { font-size: 1.8em; } }
+@media screen and (max-width: 950px) { .glide__arrow { font-size: 2.2rem; } }
 
-@media screen and (max-width: 440px) { .glide__arrow { font-size: 1.2em; } }
+@media screen and (max-width: 440px) { .glide__arrow { font-size: 1.5rem; } }
 
 .glide__arrow:focus { outline: none; }
 
@@ -135,23 +135,27 @@ body .navbar_bar_dot div { width: 0.2875em; height: 0.2875em; border-radius: 50%
 
 body .navbar_scroll { background-color: rgba(153, 77, 0, 0.6); height: 10vh; }
 
+body #overlay { background-color: #0a0500; opacity: .7; position: absolute; width: 100%; height: 100%; }
+
+body .text-jumbo { padding: 3em; background-color: #fff2e6; color: #331a00; position: relative; display: -ms-grid; display: grid; -ms-grid-columns: 46% 46%; grid-template-columns: 46% 46%; grid-template-areas: "judul text"; grid-gap: 2em; }
+
+@media screen and (max-width: 950px) { body .text-jumbo { -ms-grid-columns: 100%; grid-template-columns: 100%; grid-template-areas: "judul" "text"; } }
+
+body .text-jumbo_background { background-image: url("../assets/icon/Logo-BLM-low.png"); background-repeat: no-repeat; background-position: center; background-size: 300px; opacity: .1; position: absolute; width: 100%; height: 100%; pointer-events: none; }
+
+body .text-jumbo_judul { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: judul; color: #331a00; text-align: right; font-size: 1.5em; font-weight: bold; }
+
+@media screen and (max-width: 950px) { body .text-jumbo_judul { text-align: left; } }
+
+body .text-jumbo_judul p { -webkit-transition: 350ms ease-in-out; transition: 350ms ease-in-out; padding: 0 1em 0 0; border-right: 0.2em solid #994d00; }
+
+@media screen and (max-width: 950px) { body .text-jumbo_judul p { padding: 0 0 .2em 0; border-right: none; border-bottom: 0.2em solid #994d00; } }
+
+body .text-jumbo_text { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: text; color: #331a00; text-align: justify; }
+
+body .text-picture { position: absolute; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; font-size: 3rem; color: #fff2e6; }
+
 body .container-kenalan { background-color: #fff2e6; }
-
-body .container-kenalan_text-jumbo { padding: 3em; background-color: #fff2e6; color: #331a00; position: relative; display: -ms-grid; display: grid; -ms-grid-columns: 46% 46%; grid-template-columns: 46% 46%; grid-template-areas: "judul text"; grid-gap: 2em; }
-
-@media screen and (max-width: 950px) { body .container-kenalan_text-jumbo { -ms-grid-columns: 100%; grid-template-columns: 100%; grid-template-areas: "judul" "text"; } }
-
-body .container-kenalan_text-jumbo_background { background-image: url("../assets/icon/Logo-BLM-low.png"); background-repeat: no-repeat; background-position: center; background-size: 300px; opacity: .1; position: absolute; width: 100%; height: 100%; pointer-events: none; }
-
-body .container-kenalan_text-jumbo_judul { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: judul; color: #331a00; text-align: right; font-size: 1.5em; font-weight: bold; }
-
-@media screen and (max-width: 950px) { body .container-kenalan_text-jumbo_judul { text-align: left; } }
-
-body .container-kenalan_text-jumbo_judul p { -webkit-transition: 350ms ease-in-out; transition: 350ms ease-in-out; padding: 0 1em 0 0; border-right: 0.2em solid #994d00; }
-
-@media screen and (max-width: 950px) { body .container-kenalan_text-jumbo_judul p { padding: 0 0 .2em 0; border-right: none; border-bottom: 0.2em solid #994d00; } }
-
-body .container-kenalan_text-jumbo_text { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: text; color: #331a00; text-align: justify; }
 
 body .container-produk { background-color: #BAA89B; padding: 3em; }
 

@@ -8,11 +8,12 @@ const configaos = {
     duration: 1200
 }
 const configglide = {
-    type: 'carousel'
+    type: 'carousel',
+    autoplay: 2500
 }
 
 // Scroll method
-const scrollPage = () => {
+const scrollPage = function () {
     window.onscroll = function () {
         scrollFunction();
     };
