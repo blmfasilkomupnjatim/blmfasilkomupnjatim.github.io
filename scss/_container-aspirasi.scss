@@ -11,5 +11,17 @@
         font-weight: bold;
     }
 
+    &_iframe {
+        iframe {
+            width: 900px;
 
+            @include tablet {
+                width: 500px;
+            }
+
+            @include phone {
+                width: 370px;
+            }
+        }
+    }
 }

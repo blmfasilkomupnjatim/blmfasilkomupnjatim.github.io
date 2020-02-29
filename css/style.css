@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -12,7 +12,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .fluid {
@@ -279,6 +279,12 @@ body .navbar_logo {
 body .navbar_logo:hover {
   -webkit-filter: drop-shadow(0 0 5px #5D382E);
           filter: drop-shadow(0 0 5px #5D382E);
+}
+
+@media (max-width: 770px) {
+  body .navbar_logo {
+    width: 45%;
+  }
 }
 
 @media (max-width: 440px) {
@@ -581,10 +587,6 @@ body .navbar_scroll {
   height: 10vh;
 }
 
-body .container-home {
-  padding: 5em;
-}
-
 body .container-kenalan {
   background-color: #fff2e6;
 }
@@ -769,6 +771,22 @@ body .container-aspirasi_text {
   font-weight: bold;
 }
 
+body .container-aspirasi_iframe iframe {
+  width: 900px;
+}
+
+@media (max-width: 770px) {
+  body .container-aspirasi_iframe iframe {
+    width: 500px;
+  }
+}
+
+@media (max-width: 440px) {
+  body .container-aspirasi_iframe iframe {
+    width: 370px;
+  }
+}
+
 body .footer {
   height: 8em;
   background-color: #ffcc99;
@@ -824,6 +842,16 @@ body .footer_copyright {
   }
 }
 
+body .footer_copyright a {
+  text-decoration: none;
+  color: #ff9933;
+}
+
+body .footer_copyright a:hover {
+  -webkit-filter: drop-shadow(0 0 0.3px #5D382E);
+          filter: drop-shadow(0 0 0.3px #5D382E);
+}
+
 body .footer_contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,7 +889,6 @@ body .footer_contact {
 
 body .footer_contact a {
   color: #cc6600;
-  text-decoration: none;
 }
 
 body .footer_contact a:hover {

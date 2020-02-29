@@ -15,10 +15,10 @@
 <body>
     <nav class="navbar" id="navbar">
         <div class="navbar_logo">
-            <a href="https://github.com/Afumoons/Afumoons.github.io" class="navbar_logo_img">
+            <a href="https://www.instagram.com/blmfasilkom.upnvjt/" class="navbar_logo_img">
                 <img class="fluid" src="./assets/icon/Logo-BLM-low.png" alt="BLM FASILKOM">
             </a>
-            <a href="https://github.com/Afumoons/Afumoons.github.io" class="navbar_logo_text">
+            <a href="https://www.instagram.com/blmfasilkom.upnvjt/" class="navbar_logo_text">
                 <p>BLM FASILKOM</p>
                 <p>UPN "Veteran" Jatim</p>
             </a>
@@ -46,11 +46,50 @@
     </nav>
 
     <div class="container-home">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img class="fluid" src="./assets/img/Ka-BLM.jpeg" alt=""></li>
+                    <li class="glide__slide"><img class="fluid" src="./assets/img/Waka-BLM.jpeg" alt=""></li>
+                    <li class="glide__slide"><img class="fluid" src="./assets/img/Ka-Pengawasan.jpeg" alt=""></li>
+                    <li class="glide__slide"><img class="fluid" src="./assets/img/Angg-Pengawasan.jpeg" alt=""></li>
+                    <li class="glide__slide"><img class="fluid" src="./assets/img/Ka-Legislasi.jpeg" alt=""></li>
+                    <li class="glide__slide"><img class="fluid" src="./assets/img/Angg-Legislasi.jpeg" alt=""></li>
+                    <li class="glide__slide"><img class="fluid" src="./assets/img/Ka-Anggaran.jpeg" alt=""></li>
+                    <li class="glide__slide"><img class="fluid" src="./assets/img/Angg-Anggaran.jpeg" alt=""></li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                        class="fas fa-chevron-circle-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                        class="fas fa-chevron-circle-right"></i></button>
+            </div>
+        </div>
+        <div class="container-kenalan_text-jumbo">
+            <div class="container-kenalan_text-jumbo_judul">
+                <p>Apa itu BLM <i class="fas fa-apakah"></i></p>
 
+            </div>
+            <div class="container-kenalan_text-jumbo_text">
+                <p>BLM (Badan Legislatif Mahasiswa) Fakultas Ilmu Komputer UPN Veteran Jawa Timur adalah organisasi
+                    legislatif yang berfungsi untuk menerima dan menyalurkan aspirasi dari seluruh Fasilkom UPN Veteran
+                    Jawa Timur mengenai badan-badan organisasi, memantau kegiatan-kegiatan badan organisasi di dalam
+                    Fasilkom UPN Veteran Jawa Timur, sebagai serta untuk membawa mahasiswa baru ke dalam kehidupan
+                    universitas. Semua itu ditujukan untuk peningkatan kualitas pendidikan dan non-pendidikan yang
+                    berkelanjutan, yang harus mengarah pada peningkatan kapasitas dan karakter. Akhirnya, kami berusaha
+                    keras untuk mencapainya dengan memanfaatkan teknologi informasi canggih.</p>
+            </div>
+            <div class="container-kenalan_text-jumbo_background"></div>
+        </div>
     </div>
 
     <footer class="footer">
-        <p class="footer_copyright">Copyright © Afumoons 2020.</p>
+        <p class="footer_copyright">
+            Copyright <a href="https://github.com/Afumoons/Afumoons.github.io">
+                © Afumoons
+            </a> 2020.
+        </p>
         <div class="footer_contact">
             <a href="mailto:blmfasilkom.upnvjt@gmail.com?subject=Aspirasi KM Fasilkom"><i
                     class="far fa-envelope"></i></a>
@@ -63,6 +102,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        new Glide('.glide', configglide).mount();
+    </script>
 </body>
 
 </html>

@@ -24,6 +24,10 @@
             filter: drop-shadow(0 0 5px color(dua));
         }
 
+        @include tablet {
+            width: 45%;
+        }
+
         @include phone {
             width: 65%;
         }
