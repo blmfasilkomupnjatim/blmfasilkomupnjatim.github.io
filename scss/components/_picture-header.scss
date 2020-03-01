@@ -8,15 +8,15 @@
     // margin: 1em;
     height: 100vh;
     width: 100vw;
-    background-image: url(../../assets/img/IMG_1893-low.jpg);
+    background-image: url(../../assets/img/webp/IMG_1893-low_web.webp);
     background-size: cover;
 
     @include tablet {
-        background-image: url(../../assets/img/IMG_1893-low-tablet.jpg);
+        background-image: url(../../assets/img/webp/IMG_1893-low-tablet_web.webp);
     }
 
     @include phone {
-        background-image: url(../../assets/img/IMG_9962-low-phone.jpg);
+        background-image: url(../../assets/img/webp/IMG_9962-low-phone_web.webp);
     }
 
     &_text {
@@ -77,6 +77,14 @@
                 transition: $transition;
                 display: inline-block;
                 transform: translateY(50px);
+
+                @include tablet {
+                    min-width: 8.250px;
+                }
+
+                @include phone {
+                    min-width: 6.250px;
+                }
             }
 
             span.fade {
