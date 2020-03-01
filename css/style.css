@@ -153,11 +153,11 @@ body .text-jumbo_judul p { -webkit-transition: 350ms ease-in-out; transition: 35
 
 body .text-jumbo_text { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: text; color: #331a00; text-align: justify; }
 
-body .picture-header { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; font-size: 3rem; color: #fff2e6; height: 100vh; width: 100vw; background-image: url(../../assets/img/IMG_1893-low.jpg); background-size: cover; }
+body .picture-header { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; font-size: 3rem; color: #fff2e6; height: 100vh; width: 100vw; background-image: url(../../assets/img/webp/IMG_1893-low_web.webp); background-size: cover; }
 
-@media screen and (max-width: 950px) { body .picture-header { background-image: url(../../assets/img/IMG_1893-low-tablet.jpg); } }
+@media screen and (max-width: 950px) { body .picture-header { background-image: url(../../assets/img/webp/IMG_1893-low-tablet_web.webp); } }
 
-@media screen and (max-width: 440px) { body .picture-header { background-image: url(../../assets/img/IMG_9962-low-phone.jpg); } }
+@media screen and (max-width: 440px) { body .picture-header { background-image: url(../../assets/img/webp/IMG_9962-low-phone_web.webp); } }
 
 body .picture-header_text { border: solid 0px; -webkit-transform: translateX(2em); transform: translateX(2em); position: relative; border-left: solid 7px rgba(255, 153, 51, 0.7); border-bottom: solid 0px rgba(255, 153, 51, 0.7); padding-left: 1em; -webkit-transition: 1500ms ease-in-out; transition: 1500ms ease-in-out; }
 
