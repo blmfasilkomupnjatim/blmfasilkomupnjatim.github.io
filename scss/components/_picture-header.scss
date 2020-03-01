@@ -77,6 +77,14 @@
                 transition: $transition;
                 display: inline-block;
                 transform: translateY(50px);
+
+                @include tablet {
+                    min-width: 8.250px;
+                }
+
+                @include phone {
+                    min-width: 6.250px;
+                }
             }
 
             span.fade {
