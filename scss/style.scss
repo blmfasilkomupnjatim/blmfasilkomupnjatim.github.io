@@ -1,10 +1,10 @@
-// Atas
+/*Atas for core*/
 @import "variables";
 @import "functions";
 @import "mixins";
 @import "library";
 
-// Tengah
+/*Tengah*/
 body {
     @import "navbar";
     @import "components";
@@ -12,4 +12,4 @@ body {
     @import "footer";
 }
 
-// Bawah
+/*Bawah for animation*/

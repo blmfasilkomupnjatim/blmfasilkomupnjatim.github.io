@@ -13,14 +13,14 @@
 
     &_iframe {
         iframe {
-            width: 900px;
+            width: 370px;
 
             @include tablet {
                 width: 500px;
             }
 
-            @include phone {
-                width: 370px;
+            @include pc {
+                width: 900px;
             }
         }
     }

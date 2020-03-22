@@ -36,10 +36,10 @@
 }
 
 .container-row {
-    @include flex-row;
-    justify-content: space-around;
+    @include flex-column;
 
-    @include tablet {
-        @include flex-column;
+    @include pc {
+        @include flex-row;
+        justify-content: space-around;
     }
 }

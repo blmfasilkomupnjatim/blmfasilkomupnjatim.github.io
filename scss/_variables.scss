@@ -1,9 +1,10 @@
 //* Default Colors
-$colors: ( // Default
+$colors: (
+	/*Default*/
 	white:lighten(#ff9933, 35%),
 	black:darken(#ff9933, 50%),
 
-	// Warna satu	
+	/*Warna satu*/
 	satu: #ff9933, //* #7b48da
 	satu-light: lighten(#ff9933, 10%),
 	satu-lighter: lighten(#ff9933, 20%),
@@ -13,7 +14,7 @@ $colors: ( // Default
 	satu-darker: darken(#ff9933, 20%),
 	satu-darkest: darken(#ff9933, 30%),
 
-	// Warna Dua
+	/*Warna Dua*/
 	dua: #5D382E,
 	dua-light: lighten(#5D382E, 10%),
 	dua-lighter: lighten(#5D382E, 20%),
@@ -22,7 +23,7 @@ $colors: ( // Default
 	dua-darker: darken(#5D382E, 20%),
 	dua-darkest: darken(#5D382E, 30%),
 
-	// Warna Tiga
+	/*Warna Tiga*/
 	tiga: #524439,
 	tiga-light: lighten(#524439, 10%),
 	tiga-lighter: lighten(#524439, 20%),
@@ -31,7 +32,7 @@ $colors: ( // Default
 	tiga-darker: darken(#524439, 20%),
 	tiga-darkest: darken(#524439, 30%),
 
-	// Warna Empat
+	/*Warna Empat*/
 	empat: #BAA89B,
 	empat-light: lighten(#BAA89B, 10%),
 	empat-lighter: lighten(#BAA89B, 20%),
@@ -40,7 +41,7 @@ $colors: ( // Default
 	empat-darker: darken(#BAA89B, 20%),
 	empat-darkest: darken(#BAA89B, 30%),
 
-	// Grey
+	/*Grey*/
 	grey:#B0A8B9,
 	grey-light:lighten(#B0A8B9, 10%),
 	grey-lighter:lighten(#B0A8B9, 20%),
@@ -51,32 +52,32 @@ $colors: ( // Default
 	grey-darkest:darken(#B0A8B9, 40%),
 	grey-darkestt:darken(#B0A8B9, 70%),
 
-	// Danger
+	/*Danger*/
 	danger:#D0120F,
 	danger-light:lighten(#D0120F, 10%),
 	danger-lighter:lighten(#D0120F, 20%),
 	danger-lightest:lighten(#D0120F, 30%),
 
-	// Alert
+	/*Alert*/
 	alert:#FFC451,
 	alert-light:lighten(#FFC451, 10%),
 	alert-lighter:lighten(#FFC451, 20%),
 	alert-lightest:lighten(#FFC451, 30%),
 );
 
-// Media Breakpoints
-$tablet: 950px;
-$phone: 440px;
-// @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+/*Media Breakpoints*/
+$pc: 950px;
+$tablet: 440px;
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
 
-// Transisi
+/*Transisi*/
 $transition: 350ms ease-in-out;
 $transition-fast: 200ms ease-in-out;
 $transition-slow: 500ms ease-in-out;
 $transition-slower: 1500ms ease-in-out;
 
-//Height
+/*Height*/
 $navbar-height:12vh;
 $navbar-height-scroll:10vh;
 $navbar-bar-height:9vh;
